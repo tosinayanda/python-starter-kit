@@ -4,6 +4,16 @@ import numpy as np
 
 #create numpy arrays
 #
+
+#Generate array
+height=np.round(np.random.normal(1.75,0.20,5000),2)
+weight=np.round(np.random.normal(60.32,15,5000),2)
+np_city=np.column_stack((height,weight))
+
+print(np_city.shape)
+exit()
+
+cars=["Toyota","Chevrolet","Ford","Honda","Brabus"]
 cars_np=np.array(cars)
 weight=[20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,23,23,23,23,23,23,23,23,23,23,23,23,23,
         23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,
@@ -43,3 +53,22 @@ print(np_baseball.shape)
 
 #Statistical Operations on numpy arrays
 #
+
+# np_baseball is available
+
+
+# Print mean height (first column)
+avg = np.mean(np_baseball[:,0])
+print("Average: " + str(avg))
+
+# Print median height. Replace 'None'
+med = np.median(np_baseball[:,0])
+print("Median: " + str(med))
+
+# Print out the standard deviation on height. Replace 'None'
+stddev = np.std(np_baseball[:,0])
+print("Standard Deviation: " + str(stddev))
+
+# Print out correlation between first and second column. Replace 'None'
+corr = np.corrcoef(np_baseball[:,0],np_baseball[:,1])
+print("Correlation: " + str(corr))
