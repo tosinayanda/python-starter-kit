@@ -1,26 +1,22 @@
 # Manipulating Python Lists
 # 
-#  
-#   Create a List 
-cars=["Toyota","Chevrolet"]
+import math
+import os
+  
+#   Create a Python List 
+#
+cars=["Toyota","Chevrolet","Ford","Honda","Brabus"]
+
 print(cars)
 
-#import math
+#   Basic Operations on Python List 
+#
+
+
+#   Arithmetic Operations on a  Python List 
+#
+
 
 # print(math.pi)
 
-import numpy as np
-import json
 
-cars_np=np.array(cars)
-weight=[20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,20.12,23,23,23,23,23,23,23,23,23,23,23,23,23,
-23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,
-23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,
-23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,
-23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23]
-weight_np=np.array(weight)
-#print(type(weight_np))
-#print(weight_np)
-light=weight_np < 21
-lowweight=weight_np[light]
-print(lowweight)
